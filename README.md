@@ -1,52 +1,57 @@
-# Fashion ETL Pipeline
+# ✨ Fashion ETL Pipeline
 
-Proyek ini merupakan implementasi sederhana proses **ETL (Extract, Transform, Load)** menggunakan Python.  
-Pipeline ini melakukan scraping data produk fashion dari website, membersihkan data, lalu menyimpannya ke beberapa target seperti CSV, PostgreSQL, dan Google Sheets.
+<div align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data-purple?logo=pandas)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-DB-blue?logo=postgresql)
+![Pytest](https://img.shields.io/badge/Pytest-Testing-green?logo=pytest)
+![Coverage](https://img.shields.io/badge/Coverage-100%25-success)
 
-## Features
+Simple ETL pipeline project for scraping, cleaning, and storing fashion product data.
 
-- Web Scraping 50 halaman website
-- Data Cleaning & Transformation
-- Export ke CSV
-- Load ke PostgreSQL
-- Load ke Google Sheets
-- Unit Testing menggunakan Pytest
-- Mock Testing API Request
-- Error Handling pada setiap tahapan ETL
-- Test Coverage 100%
+</div>
 
 ---
 
-## Tech Stack
+## 📌 Overview
 
-- Python
-- Pandas
-- BeautifulSoup4
-- Requests
-- PostgreSQL
-- SQLAlchemy
-- Google Sheets API
-- Pytest
+This project implements an end-to-end **ETL (Extract, Transform, Load)** pipeline using Python.
+
+### Workflow
+
+```text
+Extract → Transform → Load
+```
+
+* Scrape data from 50 pages
+* Clean and validate data
+* Convert USD to IDR
+* Store data into CSV, PostgreSQL, and Google Sheets
+* Test using Pytest + Mock Testing
 
 ---
 
-## Project Structure
+## ⚙️ Tech Stack
+
+| Tools             | Purpose                 |
+| ----------------- | ----------------------- |
+| Python            | Main language           |
+| Pandas            | Data processing         |
+| BeautifulSoup     | Web scraping            |
+| PostgreSQL        | Database                |
+| SQLAlchemy        | Database connector      |
+| Google Sheets API | Spreadsheet integration |
+| Pytest            | Unit testing            |
+
+---
+
+## 📂 Structure
 
 ```bash
 fashion-etl-pipeline/
-│
 ├── utils/
-│   ├── extract.py
-│   ├── transform.py
-│   └── load.py
-│
 ├── tests/
-│   ├── test_extract.py
-│   ├── test_transform.py
-│   └── test_load.py
-│
 ├── main.py
 ├── requirements.txt
 ├── README.md
@@ -55,35 +60,7 @@ fashion-etl-pipeline/
 
 ---
 
-## ETL Process
-
-### 1. Extract
-Melakukan web scraping dari website target sebanyak 50 halaman menggunakan `requests` dan `BeautifulSoup`.
-
-### 2. Transform
-Melakukan pembersihan data:
-- Menghapus invalid data
-- Menghapus duplicate data
-- Konversi harga USD ke Rupiah
-- Konversi tipe data
-- Menambahkan timestamp
-
-### 3. Load
-Menyimpan data hasil transformasi ke:
-- CSV
-- PostgreSQL
-- Google Sheets
-
----
-
-## Installation
-
-Clone repository:
-
-```bash
-git clone https://github.com/username/fashion-etl-pipeline.git
-cd fashion-etl-pipeline
-```
+## ▶️ Run Project
 
 Install dependencies:
 
@@ -91,23 +68,13 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
----
-
-## Run Project
+Run ETL:
 
 ```bash
 python main.py
 ```
 
----
-
-## Run Testing
-
-```bash
-pytest tests/
-```
-
-Coverage testing:
+Run testing:
 
 ```bash
 pytest --cov=utils tests/
@@ -115,30 +82,44 @@ pytest --cov=utils tests/
 
 ---
 
-## Output
+## 📊 Result
 
-Dataset hasil ETL memiliki:
-- 1000 raw data hasil scraping
-- 867 clean data setelah transformasi
-
----
-
-## Notes
-
-Sebelum menjalankan Google Sheets integration, tambahkan file credential:
-
-```bash
-google-sheets-api.json
-```
-
-dan sesuaikan:
-- Spreadsheet ID
-- PostgreSQL connection string
-
-pada file `main.py`.
+| Stage      | Total |
+| ---------- | ----- |
+| Raw Data   | 1000  |
+| Clean Data | 867   |
 
 ---
 
-## Author
+## 🧠 Key Features
 
-Satrio Budi Pratama
+✅ Web Scraping
+✅ Data Cleaning
+✅ Error Handling
+✅ Currency Conversion
+✅ Timestamp Column
+✅ PostgreSQL Integration
+✅ Google Sheets Integration
+✅ Mock Testing
+✅ 100% Coverage
+
+---
+
+## 👨‍💻 Author
+
+**Satrio Budi Pratama**
+
+Currently exploring:
+
+* Data Engineering
+* Data Science
+* Machine Learning
+* AI Engineering
+
+---
+
+<div align="center">
+
+⭐ Building projects > only watching tutorials
+
+</div>
