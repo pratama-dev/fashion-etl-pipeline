@@ -1,0 +1,9 @@
+﻿beautifulsoup4
+pandas
+requests
+sqlalchemy
+psycopg2-binary
+gspread
+oauth2client
+pytest
+pytest-cov
